@@ -2,9 +2,8 @@ package jpabook.jpashop.service;
 
 import jpabook.jpashop.domain.*;
 import jpabook.jpashop.domain.item.Book;
-import jpabook.jpashop.exception.NotEnoughStockQuantity;
+import jpabook.jpashop.domain.exception.NotEnoughStockQuantity;
 import jpabook.jpashop.repository.OrderRepository;
-import org.assertj.core.api.Assertions;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;

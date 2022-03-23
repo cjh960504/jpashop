@@ -63,6 +63,7 @@ public class Order {
         order.setDelivery(delivery);
         for (OrderItem orderItem : orderItems) {
             order.getOrderItems().add(orderItem);
+            orderItem.setOrder(order);
         }
         order.setOrderStatus(OrderStatus.ORDER);
         order.setOrderDate(LocalDateTime.now());
